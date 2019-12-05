@@ -11,28 +11,35 @@ import {autoPlay} from 'util/audioAutoPlay'
 const bgImg = require('../../asset/images/photos/talk-bg.jpg');
 const functionImg = require('./images/function.png');
 const hungUpImg = require('./images/hung-up.png');
-const boyMp3 = require('../../asset/audio/talk.mp3');
+const boyMp3 = require('../../asset/audio/talk-boy.m4a');
+const girlMp3 = require('../../asset/audio/talk-girl.m4a');
 import wxUtils from 'util/wxUtils'
 
 export default class Talk extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            timestamp: Date.parse(new Date()) / 1000
+            timestamp: Date.parse(new Date()) / 1000,
+            src: ''
         }
     }
 
     componentDidMount() {
+        const { sex } = this.props.params
         this.interval = setInterval(()=> {
             this.setState({
                 timestamp: Date.parse(new Date()) / 1000
             });
         }, 1000);
         /*音频延迟0.1秒播放*/
-        this.audioTimer = setTimeout(()=> {
-            autoPlay('talk-audio');
-            document.getElementById('talk-audio').play();
-        }, 100);
+        this.setState({
+            src: parseInt(sex) ? girlMp3 : boyMp3
+        }, () => {
+            this.audioTimer = setTimeout(()=> {
+                autoPlay('talk-audio');
+                document.getElementById('talk-audio').play();
+            }, 100);
+        })
     }
 
     componentWillUnmount() {
@@ -43,9 +50,9 @@ export default class Talk extends Component {
 
     _countDown(timestamp) {
         var endDate = new Date();
-        endDate.setYear(2019);
-        endDate.setMonth(0);
-        endDate.setDate(29);
+        endDate.setYear(2020);
+        endDate.setMonth(1);
+        endDate.setDate(2);
         endDate.setHours(11);
         endDate.setMinutes(38);
         endDate.setSeconds(0);
@@ -81,7 +88,7 @@ export default class Talk extends Component {
                     <img className="hung-up" src={hungUpImg} onClick={()=>this._redirectToDesktop()}/>
                 </div>
                 <audio className="hidden" id="talk-audio">
-                    <source src={boyMp3} type="audio/mpeg"/>
+                    <source src={this.state.src} type="audio/mpeg"/>
                 </audio>
             </div>
         )

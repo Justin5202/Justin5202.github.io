@@ -42,13 +42,13 @@ export default class Dialing extends Component {
         return (
             <div className="full-page dialing-page">
                 <BgImg src={bgImg} animate={false} fillAll={true}/>
-                <a className="dialing-item dialing-item-1" href="tel:17710122410">
+                <a className="dialing-item dialing-item-1" href="tel:15215090876">
                     <img src={itemImg}/>
-                    <p>何金成</p>
+                    <p>李铃</p>
                 </a>
-                <a className="dialing-item dialing-item-2" href="tel:18510417316">
+                <a className="dialing-item dialing-item-2" href="tel:13618259970">
                     <img src={itemImg}/>
-                    <p>罗倩</p>
+                    <p>易甜</p>
                 </a>
                 <Back />
                 <img className="return" src={returnImg} onClick={()=>this._goBack()}/>

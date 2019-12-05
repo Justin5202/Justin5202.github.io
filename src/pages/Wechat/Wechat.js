@@ -64,9 +64,9 @@ export default class Wechat extends Component {
         return (
             <div className="full-page wechat-page">
                 <BgImg src={bgImg} animate={false} fillAll={true}/>
-                <WechatItem avatar={boyImg} topText={'何金成'} bottomText={'[语音]'} animateClass={'wechat-item-animate-1'}
+                <WechatItem avatar={boyImg} topText={'李铃'} bottomText={'[语音]'} animateClass={'wechat-item-animate-1'}
                             click={()=>this._playBoyAudio()}/>
-                <WechatItem avatar={girlImg} topText={'罗倩'} bottomText={'[语音]'} animateClass={'wechat-item-animate-2'}
+                <WechatItem avatar={girlImg} topText={'易甜'} bottomText={'[语音]'} animateClass={'wechat-item-animate-2'}
                             click={()=>this._playGirlAudio()}/>
                 {/*<WechatItem avatar={groupImg} middleText={'DD&JL'} animateClass={'wechat-item-animate-3'}/>*/}
                 <Back />

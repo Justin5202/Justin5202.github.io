@@ -17,15 +17,27 @@
   }
   .img-line-2 {
     position: absolute;
-    width: 30%;
-    bottom: 10%;
+    bottom: 15%;
+    text-align: center;
+    img {
+      width: 70%;
+      border-radius: 100%;
+    }
+    p {
+      color: #fff;
+      font-size: 2rem;
+    }
   }
-  .refuse {
-    left: 10%;
+  .img-left {
+    left: 12%;
+    @include animation(call-answer-animation 2s infinite);
   }
-  .answer {
+  .img-right {
     right: 10%;
     @include animation(call-answer-animation 2s infinite);
+  }
+  .refuse {
+    left: 12%;
   }
 
   /*接听按钮动画*/

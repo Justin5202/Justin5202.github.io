@@ -11,8 +11,8 @@ import {autoPlay} from 'util/audioAutoPlay'
 const bgImg = require('../../asset/images/photos/call-bg.jpg');
 const tipImg = require('./images/tip.png');
 const messageImg = require('./images/message.png');
-const refuseImg = require('./images/refuse.png');
-const answerImg = require('./images/answer.png');
+const answerboy = require('../../asset/images/photos/wechat-boy.jpg');
+const answergirl = require('../../asset/images/photos/wechat-girl.jpg');
 const iosMp3 = require('./audio/ios.mp3');
 
 import wxUtils from 'util/wxUtils'
@@ -24,11 +24,11 @@ export default class Call extends Component {
     }
 
 
-    _redirectToTalk() {
+    _redirectToTalk(sex) {
         sessionStorage.setItem('conductor_date', true);
         sessionStorage.setItem('conductor_map', true);
         browserHistory.push({
-            pathname: '/talk'
+            pathname: `/talk/${sex}`
         });
     }
 
@@ -49,8 +49,14 @@ export default class Call extends Component {
                 <div className="bg">
                     <img className="tip img-line-1" src={tipImg}/>
                     <img className="message img-line-1" src={messageImg}/>
-                    <img className="refuse img-line-2" src={refuseImg}/>
-                    <img className="answer img-line-2" src={answerImg} onClick={()=>this._redirectToTalk()}/>
+                    <div className='img-left img-line-2'>
+                        <img className="answer-left img" src={answerboy} onClick={()=>this._redirectToTalk(0)}/>
+                        <p>接听</p>
+                    </div>
+                    <div className='img-right img-line-2'>
+                        <img className="answer img" src={answergirl} onClick={()=>this._redirectToTalk(1)}/>
+                        <p>接听</p>
+                    </div>
                 </div>
                 <audio className="hidden" id="call-audio" autoPlay loop>
                     <source src={iosMp3} type="audio/mpeg"/>

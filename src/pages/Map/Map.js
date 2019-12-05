@@ -82,9 +82,9 @@ export default class Map extends Component {
             var info = [];
             info.push("<div class='input-card content-window-card'><div><img style=\"float:left;\" src=\"../../asset/images/hert.png \"/></div> ");
             info.push("<div style=\"padding:7px 0px 0px 0px;\"><h4>我们的婚礼宴席地点</h4>");
-            info.push("<p class='input-item'>手机 : 17710122410</p>");
-            info.push("<p class='input-item'>时间 : 2019年1月29日11点38分</p>");
-            info.push("<p class='input-item'>地址 : 四川省三台县梓州国际酒店潼川府</p></div></div>");
+            info.push("<p class='input-item'>手机 : 15215090876</p>");
+            info.push("<p class='input-item'>时间 : 2020年02月02日11点38分</p>");
+            info.push("<p class='input-item'>地址 : 重庆市开州区汉丰街道安康社区滨湖公园玉湖盛宴酒店</p></div></div>");
 
             infoWindow = new AMap.InfoWindow({
                 content: info.join("")  //使用默认信息窗体框样式，显示信息内容

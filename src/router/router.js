@@ -23,7 +23,7 @@ export default (store) => {
             { /*电话来电页*/ }
             <IndexRoute component={Call}/>
             { /* 通话页面 */ }
-            <Route path="talk" component={Talk}/>
+            <Route path="talk/:sex" component={Talk}/>
             { /* 首屏页面 */ }
             <Route path="desktop" component={Desktop}/>
             { /* 通话记录页面 */ }
