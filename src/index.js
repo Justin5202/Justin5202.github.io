@@ -14,7 +14,7 @@ const store = initStore();
 render((
     <Provider store={store}>
         <div id="index-page-box">
-            <Router basename="/wedding/" history={browserHistory} routes={getRoutes(store)}/>
+            <Router history={browserHistory} routes={getRoutes(store)}/>
             {/*{devTools}*/}
         </div>
     </Provider>
