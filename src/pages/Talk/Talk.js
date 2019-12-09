@@ -3,7 +3,7 @@
  */
 /*通话页面*/
 import React, {Component} from 'react';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import BgImg from '../../components/BgImg/BgImg';
 import './Talk.scss';
 import {autoPlay} from 'util/audioAutoPlay'
@@ -70,7 +70,7 @@ export default class Talk extends Component {
     }
 
     _redirectToDesktop() {
-        browserHistory.push({
+        hashHistory.push({
             pathname: '/desktop'
         });
     }

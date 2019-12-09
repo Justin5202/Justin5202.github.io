@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 import './Photos.scss';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import Back from '../../components/Back/Back';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 

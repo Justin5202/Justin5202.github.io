@@ -5,7 +5,7 @@
 import React, {Component} from 'react';
 import './Call.scss';
 import BgImg from '../../components/BgImg/BgImg';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import {autoPlay} from 'util/audioAutoPlay'
 
 const bgImg = require('../../asset/images/photos/call-bg.jpg');
@@ -27,7 +27,7 @@ export default class Call extends Component {
     _redirectToTalk(sex) {
         sessionStorage.setItem('conductor_date', true);
         sessionStorage.setItem('conductor_map', true);
-        browserHistory.push({
+        hashHistory.push({
             pathname: `/talk/${sex}`
         });
     }

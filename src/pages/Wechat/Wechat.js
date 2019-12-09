@@ -4,7 +4,7 @@
 /*微信聊天页面*/
 import React, {Component} from 'react';
 import './Wechat.scss';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import BgImg from '../../components/BgImg/BgImg';
 import Back from '../../components/Back/Back';
 
@@ -45,7 +45,7 @@ export default class Wechat extends Component {
     }
 
     _goBack() {
-        browserHistory.goBack(-1);
+        hashHistory.goBack(-1);
     }
 
     _playBoyAudio() {

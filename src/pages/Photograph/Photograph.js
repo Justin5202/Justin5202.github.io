@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import './Photograph.scss';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import {autoPlay} from 'util/audioAutoPlay'
 
 const bgImg = require('../../asset/images/photos/photograph-bg.jpg');
@@ -79,7 +79,7 @@ export default class Photograph extends Component {
     }
 
     _redirectToIntegrated() {
-        browserHistory.replace({
+        hashHistory.replace({
             pathname: '/integrated'
         });
     }

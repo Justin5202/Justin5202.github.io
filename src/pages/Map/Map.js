@@ -4,7 +4,7 @@
 /*地图页面*/
 import React, { Component } from 'react'
 import './Map.scss'
-import { browserHistory } from 'react-router'
+import { hashHistory } from 'react-router'
 
 const hertImg = require('./images/hert.png')
 const closeImg = require('./images/close.png')
@@ -68,7 +68,7 @@ export default class Map extends Component {
   }
 
   _goBack() {
-    browserHistory.goBack(-1)
+    hashHistory.goBack(-1)
   }
 
   render() {

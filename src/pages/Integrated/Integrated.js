@@ -2,7 +2,7 @@
  * Created by brickspert on 2016/12/31.
  */
 import React, {Component} from 'react';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import './Integrated.scss';
 import Back from 'components/Back/Back';
 import Bless from 'components/Bless/Bless';
@@ -36,13 +36,13 @@ export default class Integrated extends Component {
     }
 
     _redirectToInvite() {
-        browserHistory.push({
+        hashHistory.push({
             pathname: '/invite'
         });
     }
 
     _redirectToSnapshot() {
-        browserHistory.push({
+        hashHistory.push({
             pathname: '/snapshot'
         });
     }

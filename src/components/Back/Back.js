@@ -4,7 +4,7 @@
 /*后退按钮*/
 import React, {Component} from 'react';
 import './Back.scss';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 
 const backImg = require('./images/back.png');
 
@@ -15,7 +15,7 @@ export default class Back extends Component {
     }
 
     _goBack() {
-        browserHistory.goBack(-1);
+        hashHistory.goBack(-1);
     }
 
     render() {

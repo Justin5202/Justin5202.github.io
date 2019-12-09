@@ -4,7 +4,7 @@ import React, {Component} from "react";
 import {render} from "react-dom";
 import {Provider} from "react-redux";
 import {createStore, applyMiddleware, compose} from "redux";
-import {Router, Route, IndexRoute, browserHistory, Link} from "react-router";
+import {Router, Route, IndexRoute, hashHistory, Link} from "react-router";
 import DevTools from "./pages/DevTools/DevTools";
 import getRoutes from "./router/router.js";
 import initStore from "./config/store";
@@ -14,7 +14,7 @@ const store = initStore();
 render((
     <Provider store={store}>
         <div id="index-page-box">
-            <Router history={browserHistory} routes={getRoutes(store)}/>
+            <Router history={hashHistory} routes={getRoutes(store)}/>
             {/*{devTools}*/}
         </div>
     </Provider>

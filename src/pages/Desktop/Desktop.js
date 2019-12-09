@@ -4,7 +4,7 @@
 /*桌面*/
 import React, {Component} from 'react';
 import './Desktop.scss';
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import {autoPlay} from 'util/audioAutoPlay'
 
 import Bless from '../../components/Bless/Bless';
@@ -44,7 +44,7 @@ class BottomHotSpot extends Component {
             // 地图特殊处理，去掉引导手势
             sessionStorage.setItem('conductor_map', false);
         }
-        browserHistory.push({
+        hashHistory.push({
             pathname: url
         });
     }
@@ -137,7 +137,7 @@ export default class Desktop extends Component {
             // 日期特殊处理，去掉引导手势
             sessionStorage.setItem('conductor_date', false);
         }
-        browserHistory.push({
+        hashHistory.push({
             pathname: url
         });
     }

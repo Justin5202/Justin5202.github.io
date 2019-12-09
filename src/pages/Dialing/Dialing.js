@@ -6,7 +6,7 @@ import React, {Component} from 'react';
 import './Dialing.scss';
 import {autoPlay} from 'util/audioAutoPlay'
 
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 import Back from '../../components/Back/Back';
 import BgImg from '../../components/BgImg/BgImg';
 
@@ -35,7 +35,7 @@ export default class Dialing extends Component {
     }
 
     _goBack() {
-        browserHistory.goBack(-1);
+        hashHistory.goBack(-1);
     }
 
     render() {

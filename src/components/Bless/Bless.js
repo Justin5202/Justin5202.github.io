@@ -7,7 +7,7 @@ import './Bless.scss';
 import {getBless, commitBless} from '../../reducers/bless/bless'
 import {connect} from 'react-redux';
 
-import {browserHistory} from 'react-router';
+import {hashHistory} from 'react-router';
 
 @connect(
     state => ({bless: state.bless}),
