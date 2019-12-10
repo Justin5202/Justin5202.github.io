@@ -13,6 +13,8 @@ import emitter from "../../components/Events/ev";
 
 const bgImg = require('../../asset/images/photos/desktop-bg.jpg');
 const iconImg = require('./images/icon.png');
+const iconTop = require('./images/top.png');
+const iconBot = require('./images/bottom.png');
 const hand = require('./images/hand2.png');
 const count1Img = require('./images/count-1.png');
 const count2Img = require('./images/count-2.png');
@@ -154,7 +156,8 @@ export default class Desktop extends Component {
                 <BgImg src={bgImg} animate={true}/>
                 <div className="bg">
                     <div className="white-bottom"></div>
-                    <img src={iconImg} className="icon"/>
+                    <img src={iconTop} className="icon icon-top"/>
+                    <img src={iconBot} className="icon icon-bot"/>
                     {console.log(sessionStorage.getItem('conductor_date'))}
                     {sessionStorage.getItem('conductor_date') == 'true' ?
                         <div><img src={hand} className="date-hand"/></div>
@@ -168,8 +171,8 @@ export default class Desktop extends Component {
                         ''
                     }
                     {/*上部热点区*/}
-                    <TopHotSpot left="0%" topText={userType == 'boy' ? '二月' : '二月'}
-                                middleText={userType == 'boy' ? '02' : '02'} bottomText={'日期'}
+                    <TopHotSpot left="0%" topText={userType == 'boy' ? '正月' : '正月'}
+                                middleText={userType == 'boy' ? '初九' : '初九'} bottomText={'日期'}
                                 click={() => {
                                     this._redirectToUrl('/integrated');
                                 }}/>

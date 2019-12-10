@@ -29,7 +29,7 @@ export default class Map extends Component {
       var info = []
       info.push(`<div>
         <h4 style="font-size: 22px;">我们的婚礼宴席地点</h4>
-        <p style='font-size: 22px;'>时间: 2020年02月02日</p>
+        <p style='font-size: 22px;'>时间: 2020年正月初九</p>
         <p style='font-size: 22px;'>地址: 重庆市开州区滨湖公园玉湖盛宴酒店</p>
         <p style="display: flex;
         justify-content: space-around;

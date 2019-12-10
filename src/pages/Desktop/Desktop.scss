@@ -41,15 +41,21 @@
 
   .icon {
     width: 100%;
-    height: 100%;
+    height: auto;
     z-index: 1;
     position: absolute;
-    top: 0;
+    right: 0;
     left: 0;
+  }
+  .icon-top {
+    top: 0;
+  }
+  .icon-bot {
+    bottom: 0;
   }
   .white-bottom {
     z-index: 0;
-    height: 20%;
+    height: 18%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -71,18 +77,18 @@
     .top-text {
       font-size: 5vw;
       font-family: FZKaTong;
-      top: 15%;
+      top: 12%;
     }
     .middle-text {
-      font-size: 8vw;
+      font-size: 5vw;
       font-family: FZKaTong;
-      top: 35%;
+      top: 36%;
       color: rgb(51, 51, 51);
     }
     .bottom-text {
       font-size: 5vw;
       font-family: ZHSRXT;
-      top: 75%;
+      top: 70%;
       color: #ffffff;
     }
   }
@@ -98,7 +104,7 @@
   .red-point {
     position: absolute;
     right: 0;
-    top: 15%;
+    top: 25%;
     width: 25%;
     height: auto;
     z-index: 3
