@@ -178,7 +178,7 @@ export default class Desktop extends Component {
                                 }}/>
                     <TopHotSpot left="25%" bottomText={'视频'} click={() => this._openVideo()}/>
                     <TopHotSpot left="50%" bottomText={'相册'} click={() => this._redirectToUrl('/photos')}/>
-                    <TopHotSpot left="75%" bottomText={'祝福'} click={() => this._openBless()}/>
+                    <TopHotSpot left="75%" bottomText={'邀请'} click={() =>this._redirectToUrl('/invite')}/>
                     {/*下部热点区*/}
                     <BottomHotSpot count={2} left="0%" animateType={2} toUrl={'/dialing'}/>
                     <BottomHotSpot count={1} left="25%" animateType={2} toUrl={'/wechat'}/>
