@@ -72,13 +72,13 @@ export default class Integrated extends Component {
                         intro="邀请信息"
                         click={()=>this._redirectToInvite()}
                     />
-                    <IntegratedItem
+                    {/* <IntegratedItem
                         position="item-2"
                         imgSrc={circle2Img}
                         title="好友动态"
                         intro="祝福留言"
                         click={()=>this._openBless()}
-                    />
+                    /> */}
                     <Back position={"integrated-back"}/>
 
                     {/*祝福*/}

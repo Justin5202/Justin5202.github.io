@@ -89,7 +89,7 @@ export default class Photograph extends Component {
         return (
             <div className="full-page photograph-page">
                 <div className={animateClass}>
-                    <img src={bgImg} className="photo"/>
+                    <img src={bgImg} className="photo" style={{ 'objectFit': 'cover' }}/>
                     <img src={blackWhiteImg} className="black-white"/>
                     <img src={borderImg} className="photo-border"/>
                     <div className="photograph-focus"></div>

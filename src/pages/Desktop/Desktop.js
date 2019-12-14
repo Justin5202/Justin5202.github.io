@@ -145,6 +145,19 @@ export default class Desktop extends Component {
     }
 
     componentDidMount() {
+        var u = navigator.userAgent;
+        var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        if (isIOS) {    	
+            if (screen.height == 812 && screen.width == 375){
+                document.querySelectorAll('.bottom-hot-spot').forEach(element => {
+                    element.style.height = '17%'
+                })
+                document.querySelectorAll('.top-hot-spot').forEach(element => {
+                    element.style.height = '17%'
+                })
+                document.querySelector('.white-bottom').style.height = '15%'
+            }
+        }
         autoPlay('desktop-audio');
         wxUtils.disabledToolbar();
     }
@@ -193,7 +206,7 @@ export default class Desktop extends Component {
                 {this.state.videoShow ?
                     <div className='video' onClick={() => this._closeVideo()}>
                         <img src={closeImg} className="close" onClick={() => this._closeVideo()}/>
-                        <iframe src="http://pj42rsz6v.bkt.clouddn.com/wedding_new.mp4"
+                        <iframe src="https://657-4-1.vod.tv.itc.cn/sohu/v1/TmvdTmPGTmFgJRaPxU3pELOWamFz9WgGXka8twwytHrChWoIymcAwmW2oTv2ZD4sY.mp4?k=qpCm7p&p=XZhuOpC3q6OdjpCGhRYRzSwWXWldzHqu4ZkWsUwIWY&r=TmagXpxnyLbUZDWSqt8IS3OJ3YL9kDyxRX7aHFBEL53kHlpc9JaqiqTakjzq9gM4EOy49JmzSs3qAOW49GlzY&q=OpC7hW7IRYodRDbOvmfCyY2sRYWHfJvt5GvsfJXtWDo2ZDvtfJyOfJAtwm4cWJbOwmscWY"
                                 onClick={(e) => e.preventDefault()}></iframe>
                     </div>
                     :
