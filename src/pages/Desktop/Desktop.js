@@ -148,12 +148,12 @@ export default class Desktop extends Component {
         var u = navigator.userAgent;
         var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
         if (isIOS) {    	
-            if (screen.height == 812 && screen.width == 375){
+            if (window.screen.height + 88 == 812 && window.screen.width == 375){
                 document.querySelectorAll('.bottom-hot-spot').forEach(element => {
                     element.style.height = '17%'
                 })
                 document.querySelectorAll('.top-hot-spot').forEach(element => {
-                    element.style.height = '17%'
+                    element.style.height = '18%'
                 })
                 document.querySelector('.white-bottom').style.height = '15%'
             }
