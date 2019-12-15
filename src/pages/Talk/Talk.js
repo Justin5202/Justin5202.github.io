@@ -11,8 +11,8 @@ import {autoPlay} from 'util/audioAutoPlay'
 const bgImg = require('../../asset/images/photos/talk-bg.jpg');
 const functionImg = require('./images/function.png');
 const hungUpImg = require('./images/hung-up.png');
-const boyMp3 = require('../../asset/audio/talk-boy.m4a');
-const girlMp3 = require('../../asset/audio/talk-girl.m4a');
+const boyMp3 = require('../../asset/audio/talk-boy.mp3');
+const girlMp3 = require('../../asset/audio/talk-girl.mp3');
 import wxUtils from 'util/wxUtils'
 
 export default class Talk extends Component {

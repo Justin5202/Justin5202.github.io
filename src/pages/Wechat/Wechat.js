@@ -13,8 +13,8 @@ const returnImg = require('../../asset/images/return.png');
 const boyImg = require('../../asset/images/photos/wechat-boy.jpg');
 const girlImg = require('../../asset/images/photos/wechat-girl.jpg');
 
-const boyAudioMp3 = require('../../asset/audio/wechat-boy.m4a');
-const girlAudioMp3 = require('../../asset/audio/wechat-girl.m4a');
+const boyAudioMp3 = require('../../asset/audio/wechat-boy.mp3');
+const girlAudioMp3 = require('../../asset/audio/wechat-girl.mp3');
 
 const msgMp3 = require('./audio/msg.mp3');
 

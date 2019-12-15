@@ -13,10 +13,7 @@ export function autoPlay(eId) {
         signature: '',
         jsApiList: []
     });
-    document.addEventListener("WeixinJSBridgeReady", function() {
-        document.getElementById(eId).play();
-    }, false);
-    wx.ready(()=> {
+    wx.ready(() => {
         document.getElementById(eId).play();
     });
 }
