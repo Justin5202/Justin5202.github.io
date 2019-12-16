@@ -206,7 +206,7 @@ export default class Desktop extends Component {
                 {this.state.videoShow ?
                     <div className='video' onClick={() => this._closeVideo()}>
                         <img src={closeImg} className="close" onClick={() => this._closeVideo()}/>
-                        <iframe src="https://657-4-1.vod.tv.itc.cn/sohu/v1/TmvdTmPGTmFgJRaPxU3pELOWamFz9WgGXka8twwytHrChWoIymcAwmW2oTv2ZD4sY.mp4?k=qpCm7p&p=XZhuOpC3q6OdjpCGhRYRzSwWXWldzHqu4ZkWsUwIWY&r=TmagXpxnyLbUZDWSqt8IS3OJ3YL9kDyxRX7aHFBEL53kHlpc9JaqiqTakjzq9gM4EOy49JmzSs3qAOW49GlzY&q=OpC7hW7IRYodRDbOvmfCyY2sRYWHfJvt5GvsfJXtWDo2ZDvtfJyOfJAtwm4cWJbOwmscWY"
+                        <iframe src="https://www.bilibili.com/video/av79426740/"
                                 onClick={(e) => e.preventDefault()}></iframe>
                     </div>
                     :
