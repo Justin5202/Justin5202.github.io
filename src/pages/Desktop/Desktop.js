@@ -184,8 +184,8 @@ export default class Desktop extends Component {
                         ''
                     }
                     {/*上部热点区*/}
-                    <TopHotSpot left="0%" topText={userType == 'boy' ? '正月' : '正月'}
-                                middleText={userType == 'boy' ? '初九' : '初九'} bottomText={'日期'}
+                    <TopHotSpot left="0%" topText={userType == 'boy' ? '5月' : '5月'}
+                                middleText={userType == 'boy' ? '1日' : '1日'} bottomText={'日期'}
                                 click={() => {
                                     this._redirectToUrl('/integrated');
                                 }}/>

@@ -51,7 +51,7 @@ export default class Talk extends Component {
     _countDown(timestamp) {
         var endDate = new Date();
         endDate.setYear(2020);
-        endDate.setMonth(1);
+        endDate.setMonth(4);
         endDate.setDate(2);
         endDate.setHours(11);
         endDate.setMinutes(38);
