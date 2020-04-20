@@ -53,7 +53,7 @@ export default class Map extends Component {
                 text-decoration: none;
                 color: #fff;
                 border-radius: 2px"
-                href="http://api.map.baidu.com/marker?location=31.167907,108.377437&title=所在位置名称&content=成都田园印象&output=html">百度导航</a>
+                href="http://api.map.baidu.com/marker?location=31.17404,108.383457&title=所在位置名称&content=成都田园印象&output=html">百度导航</a>
         </p>
         </div>`)
 
