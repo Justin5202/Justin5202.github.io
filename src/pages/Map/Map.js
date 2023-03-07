@@ -20,7 +20,7 @@ export default class Map extends Component {
       resizeEnable: true,
       // mapStyle: 'amap://styles/wine', //设置地图的显示样式
       features: ['bg', 'point', 'road', 'building'],
-      center: [108.377437, 31.167907],
+      center: [107.74, 29.32],
       zoom: 20
     })
     //在指定位置打开信息窗体
@@ -29,8 +29,8 @@ export default class Map extends Component {
       var info = []
       info.push(`<div>
         <h4 style="font-size: 22px;">我们的婚礼宴席地点</h4>
-        <p style='font-size: 22px;'>时间: 2020年5月1日</p>
-        <p style='font-size: 22px;'>地址: 重庆市开州区凤凰花园后门田园印象酒店</p>
+        <p style='font-size: 22px;'>时间: 2023年5月2日</p>
+        <p style='font-size: 22px;'>地址: 重庆市武隆区南滨路国平时代天街底商(武隆区汉平美食城)</p>
         <p style="display: flex;
         justify-content: space-around;
         padding: 6px 0">
@@ -43,7 +43,7 @@ export default class Map extends Component {
                 text-decoration: none;
                 color: #fff;
                 border-radius: 2px"
-                href="https://uri.amap.com/marker?position=108.377437,31.167907&name=成都田园印象">高德导航</a>
+                href="https://uri.amap.com/marker?position=107.74,29.32&name=武隆区汉平美食城">高德导航</a>
             <a
                 style="display: inline-block;
                 padding: 4px 6px;
@@ -53,7 +53,7 @@ export default class Map extends Component {
                 text-decoration: none;
                 color: #fff;
                 border-radius: 2px"
-                href="http://api.map.baidu.com/marker?location=31.17404,108.383457&title=所在位置名称&content=成都田园印象&output=html">百度导航</a>
+                href="http://api.map.baidu.com/marker?location=107.74,29.32&title=所在位置名称&content=武隆区汉平美食城&output=html">百度导航</a>
         </p>
         </div>`)
 
